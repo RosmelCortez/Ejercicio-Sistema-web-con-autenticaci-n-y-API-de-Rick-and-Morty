@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Rick and Morty App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 min-h-screen relative overflow-x-hidden text-white min-h-screen flex items-center justify-center p-4">
+  <div class="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-md border border-gray-700">
+    <h2 class="text-2xl font-bold mb-6 text-center text-green-400">Crear Cuenta</h2>
+    <canvas id="galaxy-bg" class="fixed inset-0 pointer-events-none -z-10"></canvas>
+
+    <form id="register-form" class="space-y-4" novalidate>
+      <div>
+        <label class="block text-sm font-medium mb-1">Nombre</label>
+        <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded p-2 text-white focus:outline-none focus:border-green-400">
+        <p id="error-name" class="text-red-400 text-xs mt-1 hidden"></p>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Apellido</label>
+        <input type="text" id="surname" class="w-full bg-gray-700 border border-gray-600 rounded p-2 text-white focus:outline-none focus:border-green-400">
+        <p id="error-surname" class="text-red-400 text-xs mt-1 hidden"></p>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Correo Electrónico</label>
+        <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded p-2 text-white focus:outline-none focus:border-green-400">
+        <p id="error-email" class="text-red-400 text-xs mt-1 hidden"></p>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Contraseña</label>
+        <input type="password" id="password" class="w-full bg-gray-700 border border-gray-600 rounded p-2 text-white focus:outline-none focus:border-green-400">
+        <p id="error-password" class="text-red-400 text-xs mt-1 hidden"></p>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Confirmar Contraseña</label>
+        <input type="password" id="confirm-password" class="w-full bg-gray-700 border border-gray-600 rounded p-2 text-white focus:outline-none focus:border-green-400">
+        <p id="error-confirm-password" class="text-red-400 text-xs mt-1 hidden"></p>
+      </div>
+
+      <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded transition">Registrarse</button>
+    </form>
+
+    <p class="mt-4 text-center text-sm text-gray-400">
+      ¿Ya tienes cuenta? <a href="login.html" class="text-green-400 hover:underline">Inicia sesión</a>
+    </p>
+  </div>
+
+  <script type="module" src="js/register.js"></script>
+  <script src="js/galaxy.js"></script>
+</body>
+</html>
